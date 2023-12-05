@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+font-family: sans-serif;
+background-image: url(imagens/g10\ fundo.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+header{
+
+}
+
+.foto{
+/* margin-top: 15px; */
+margin-left: 90px;
+width: 90px;
+height: 80px;
+border-radius: 50px;
+}
+h1{
+    text-align: center;
+    color: #1f030d;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.658);
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    width: 400px;
+    height: 315px;
+    background-color: #3a3235ab;
+    margin: auto;
+    /* margin-top: 8px; */
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px black;
+}
+
+input{
+    border-radius: 10px;
+}
+main .femp{
+    width: 200px;
+    height: 60px;
+    background-color:#8C234A;
+    margin: 25px 100px;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px black;
+    font-weight: bold;
+}
+div #fe{
+    width: 55px;
+    height: 40px;
+}
+
+main .pdg{
+    width: 200px;
+    height: 60px;
+    background-color: #8C234A;
+    margin: 25px 100px;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px black;
+    font-weight: bold;
+}
+div #pd{
+    width: 55px;
+    height: 40px;
+}
+
+main .pso{
+    width: 200px;
+    height: 60px;
+    background-color: #8C234A;
+    margin: 25px 100px;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px black;
+    font-weight: bold;
+}
+div #peso{
+    width: 55px;
+    height: 40px;
+}
+
+main .res{
+    width: 200px;
+    height: 60px;
+    background-color: #5f0425;
+    margin: 25px 100px;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px black;
+    font-weight: bold;
+    color: white;
+}
+div #res{
+    width: 55px;
+    height: 40px;
+}
+
+
+main .femp:hover{
+animation: scaleButton 0.5s alternate infinite;
+}
+
+main .pdg:hover{
+    animation: scaleButton 0.5s alternate infinite;
+}
+
+main .pso:hover{
+    animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+    from{
+        transform: scaleX(1);
+        color: red;
+    }
+    to{
+        transform: scaleX(1.03);
+    }
+}
+
+@media screen (max-width: 750px){
+    menu .tx{
+        font-size:35px;
+    }
+}
+
+footer{
+    text-align: center;
+    margin-top: 85px;
+}
