@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/g10.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css"> 
+    <script src="../../assets/vendor/aos/dist/aos.js"></script>   
     <title>Calculadora de Fretes</title>
 </head>
-<body>
+<body onload="calcular()">
     <header>
         <menu>
             <img class="foto" src="imagens/g10.jpg" alt="">
@@ -15,19 +17,24 @@
         <h1 class="tx">CALCULADORA DE FRETE</h1>
     </header>
     <main>
-        <div class="femp">
+        <div class="femp" data-aos="flip-up">
             <input type="number" name="fempresa" id="fe">
             <label for="fe">Frete Empresa</label>            
         </div>
-        <div class="pdg">
+        <div class="pdg" data-aos="fade-down-left">
             <input type="number" name="pedagio" id="pd">
             <label for="pd">Pedágio</label>
         </div>
-        <div class="pso">
+        <div class="pso" data-aos="zoom-in-left">
             <input type="number" name="peso" id="peso">
             <label for="peso">Peso</label>
         </div>
-        <div class="res">
+
+        <div id="calc" onclick="calcular()">
+            <input class="calc" type="button" value="CALCULAR">
+        </div>
+
+        <div class="res" data-aos="zoom-out-left">
             <input type="number" name="res" id="res">
             <label for="res">VALOR UNITÁRIO</label>
         </div>
@@ -35,5 +42,8 @@
     <footer>
        Desenvolvido por &copy;Devdinei
     </footer>
+    
+    
+    <script src="script.js"></script>
 </body>
 </html>

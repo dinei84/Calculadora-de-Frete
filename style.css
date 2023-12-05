@@ -33,7 +33,7 @@ h1{
 
 main{
     width: 400px;
-    height: 315px;
+    height: 515px;
     background-color: #3a3235ab;
     margin: auto;
     /* margin-top: 8px; */
@@ -41,9 +41,23 @@ main{
     box-shadow: 2px 2px 8px black;
 }
 
-input{
+/* input{
     border-radius: 10px;
+} ajustando o botão de calculo */
+
+div#calc{
+    width: 85px;
+    height: 35px;
+    margin: auto;
+} 
+input.calc{
+    width: 85px;
+    height: 35px;
+    background-color: #a40741;
+    font-family: cursive;
+    border-radius: 8px;
 }
+
 main .femp{
     width: 200px;
     height: 60px;
@@ -106,6 +120,8 @@ div #res{
 }
 
 
+
+
 main .femp:hover{
 animation: scaleButton 0.5s alternate infinite;
 }
@@ -128,13 +144,3 @@ main .pso:hover{
     }
 }
 
-@media screen (max-width: 750px){
-    menu .tx{
-        font-size:35px;
-    }
-}
-
-footer{
-    text-align: center;
-    margin-top: 85px;
-}
