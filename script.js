@@ -1,20 +1,13 @@
-$(document).on('ready', function () {
-    // initialization of aos
-    AOS.init({
-      duration: 650,
-      once: true
-    });
-  });
 
-  function calcular(){
-    var femp = document.getElementById('fe')
-    var pdg = document.getElementById('pd')
-    var pso = document.getElementById('peso')
-    var res = document.getElementById('res')
+function calcular() {
+  console.log("Função calcular() chamada");
+  // var fe = parseFloat(document.getElementById('fe').value) || 0;
+  // var pd = parseFloat(document.getElementById('pd').value) || 0;
+  // var peso = parseFloat(document.getElementById('peso').value) || 0;
 
-    if (fe.value.length == 0 || pdg.value.length == 0){
-      window.alert('Digite um número maior que 0 em Frete Empresa e em Peso')
-    }else{
-      var res = 
-    }
-  }
+  // var pesoArredondado = Math.round(peso);
+  // var valorPedagioPorQuilo = pd / pesoArredondado;
+  // var resultado = fe - valorPedagioPorQuilo;
+
+  // document.getElementById('res').value = resultado.toFixed(2);
+}
